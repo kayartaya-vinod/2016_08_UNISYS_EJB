@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar id="ejb-jar_ID" version="2.1"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+	<display-name>AddressBookEjbs</display-name>
+
+	<enterprise-beans>
+
+		<entity>
+			<ejb-name>Contact</ejb-name>
+			<home>training.ejb.entity.ContactHome</home>
+			<remote>training.ejb.entity.Contact</remote>
+			<ejb-class>training.ejb.entity.ContactBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.Integer</prim-key-class>
+			<reentrant>false</reentrant>
+			<!-- correspond to setters/getters in the bean class -->
+			<cmp-field>
+				<field-name>id</field-name>
+			</cmp-field>
+			<cmp-field>
+				<field-name>name</field-name>
+			</cmp-field>
+			<cmp-field>
+				<field-name>email</field-name>
+			</cmp-field>
+			<cmp-field>
+				<field-name>phone</field-name>
+			</cmp-field>
+			
+			<primkey-field>id</primkey-field>
+			
+		</entity>
+
+		<session>
+			<ejb-name>AddressBookDao</ejb-name>
+			<home>training.ejb.session.AddressBookDaoHome</home>
+			<remote>training.ejb.session.AddressBookDao</remote>
+			<ejb-class>training.ejb.session.AddressBookDaoBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+	</enterprise-beans>
+</ejb-jar>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

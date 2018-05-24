@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ContactsApp">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="ContactsEjb.jar" deploy-path="/" handle="module:/resource/ContactsEjb/ContactsEjb">
+            <dependent-object>EjbModule_1473165211801</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ContactsWebapp.war" deploy-path="/" handle="module:/resource/ContactsWebapp/ContactsWebapp">
+            <dependent-object>WebModule_1473165211819</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

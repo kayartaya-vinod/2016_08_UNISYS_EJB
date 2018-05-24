@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EJB 2.1 AddressBook App</title>
+</head>
+<body>
+	<h1>EJB 2.1 AddressBook App</h1>
+	<h2>Add a new contact (or click here to <a href="ListAllContactsServlet">view all</a>)</h2>
+	<form action="AddContactServlet" method="POST">
+		<table>
+			<tr>
+				<td>Id</td>
+				<td><input name="id" /></td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><input name="name" size="20" /></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input name="email" size="50" /></td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td><input name="phone" /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><button>Submit</button></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

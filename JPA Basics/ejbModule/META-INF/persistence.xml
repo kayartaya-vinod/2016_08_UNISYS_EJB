@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	version="1.0">
+	<!-- Thie information given below, is used by ejb container to create an 
+		object of EntityManager interface -->
+	<persistence-unit name="northwind_pu">
+
+		<jta-data-source>java:/northwind</jta-data-source>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<class>training.entity.Category</class>
+		<class>training.entity.Product</class>
+		<class>training.entity.Employee</class>
+		<class>training.entity.Laptop</class>
+		<class>training.entity.Skill</class>
+		
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.format_sql" value="true" />
+		</properties>
+	</persistence-unit>
+
+</persistence>
